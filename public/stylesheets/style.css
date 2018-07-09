@@ -1,8 +1,44 @@
+
+/* ---- reset ---- */
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
 body {
+  margin: 0;
+  padding: 0;
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 0.75em "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
-  color: #00B7FF;
+  color: rgb(35, 126, 140);
+  font-size: 0.85em;
+}
+
+button {
+  width: 125px;
+  height: 25px;
+  border-radius: 25px;
+  margin-bottom: 60px;
+  background-color:rgb(243, 247, 217);
+
+}
+
+/* ---- id style ---- */
+
+#index {
+  display: flex;
+  justify-content:center;
+  align-items:flex-end;
+  height: 500px;
+  width: 800px;
+  background-image: url(../images/cine.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: auto;
 }
