@@ -2,8 +2,10 @@
 <h2>Click on the movie to check the showtimes!</h2>
 <div id="container">
     {{#each movies}}
-        <div class="movies" href="books/{{this._id}}"> 
-            {{this.image}},
-            {{this.title}}
+        <div class="movies"> 
+            <img src="{{this.image}}" alt="">
+            <p>{{this.title}}</p>
+            <a href="movies/{{this._id}}">see more</a>
         </div>
+    {{/each}}
 </div>

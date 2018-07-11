@@ -11,8 +11,13 @@ html {
 body {
   margin: 0;
   padding: 0;
+}
+
+/* ---- typography ---- */
+
+body {
   padding: 50px;
-  font: 0.75em "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 0.75em 'Varela Round', sans-serif;
 }
 
 a {
@@ -26,7 +31,18 @@ button {
   border-radius: 25px;
   margin-bottom: 60px;
   background-color:rgb(243, 247, 217);
+}
 
+img {
+  margin-bottom: 10px;
+}
+
+p {
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin: auto;
 }
 
 /* ---- id style ---- */
@@ -37,8 +53,32 @@ button {
   align-items:flex-end;
   height: 500px;
   width: 800px;
+  margin: auto;
   background-image: url(../images/cine.jpg);
   background-size: contain;
   background-repeat: no-repeat;
-  margin: auto;
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 25px 0px;
+  text-align: center;
+}
+
+#detail-container {
+  display: flex;
+  margin: auto 50px;
+}
+
+/* ---- class style ---- */
+
+.movies {
+  margin: 25px 75px;
+}
+
+.movie-detail {
+  margin: auto 40px;
+  width: 40%;
 }
