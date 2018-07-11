@@ -1,5 +1,14 @@
 <h1>IRONCINEMA</h1>
 <h2>Click on the movie to check the showtimes!</h2>
+
+<div class="btn-logout">
+
+<p>Logged as mister {{currentUser.username}}</p>
+    <form method="POST" action="/auth/logout">
+      <button>logout</button>
+    </form>
+</div>
+
 <div id="container">
     {{#each movies}}
         <div class="movies"> 
@@ -7,5 +16,12 @@
             <p>{{this.title}}</p>
             <a href="movies/{{this._id}}">see more</a>
         </div>
+        <div>
+            <a href="">Add to favorite</a>
+        </div>
     {{/each}}
+</div>
+
+<div class="favorites">
+    <h1>Here are your favorite movies</h1>
 </div>
